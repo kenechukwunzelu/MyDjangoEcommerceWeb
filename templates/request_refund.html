@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head_title %}RequestRefund{% endblock head_title %}
+
+{% block content %}
+<main>
+    <div class="container">
+        <div class="table-responsive text-nowrap shadow">
+            <h2>Request Refund</h2>
+
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form }}
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</main>
+{% endblock content %}
